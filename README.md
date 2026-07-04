@@ -1,16 +1,37 @@
-# Booking & Scheduling — ES/EN
+# OteroScheduler
 
-## Español
+**EN**: Booking & Scheduling (overlap-safe)  
+**ES**: Reservas y scheduling (sin solapamientos)
 
-Sistema de reservas con validación de solapamiento (no-overlap) y manejo de timezones.
+## Live demo / Demo online
+- **Web**: https://booking-scheduling-fastapi.vercel.app
+- **API docs**: https://booking-scheduling-fastapi-api.onrender.com/docs
+- **API health**: https://booking-scheduling-fastapi-api.onrender.com/api/v1/health
 
-### Endpoints
-- `/api/v1/booking/resources` (GET/POST)
-- `/api/v1/booking/bookings` (GET/POST)
+## Stack
+- FastAPI
+- PostgreSQL
+- Docker
+- Concurrency rules
 
----
+## Local setup (Docker)
 
-## English
+`ash
+cp .env.example .env
+docker compose up --build
+`
 
-Booking & scheduling backend with overlap checks and timezone-safe timestamps.
+## Credentials (demo)
 
+**EN**: Default demo admin is seeded from ADMIN_EMAIL / ADMIN_PASSWORD.  
+**ES**: El admin demo se crea desde ADMIN_EMAIL / ADMIN_PASSWORD.
+
+## Deploy
+
+**EN**:
+- Backend: Render (Blueprint via ender.yaml)
+- Frontend: Vercel (Root Directory: web)
+
+**ES**:
+- Backend: Render (Blueprint con ender.yaml)
+- Frontend: Vercel (Root Directory: web)
